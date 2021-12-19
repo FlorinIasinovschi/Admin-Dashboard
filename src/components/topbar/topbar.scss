@@ -1,0 +1,81 @@
+.navbar {
+  background: rgb(255, 255, 255);
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  .left {
+      flex: 1;
+    .wrapper {
+      margin: 0  0 0 10%;
+      display: flex;
+      align-items: center;
+      font-size: 1.5em;
+      color: rgb(63, 7, 218);
+      }
+    }
+  .right {
+    flex: 4;
+    .icon-wrapper {
+      //background: rgb(120, 120, 207);
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      margin: 0 5% 0 0;
+      height: auto;
+      .profile-image{
+        width: auto;
+        height: auto;
+        //background: chartreuse;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+          cursor: pointer;
+        }
+        
+      }
+
+        .notification-container {
+          width: 30px;
+          height: 30px;
+          margin: 0 2% 0 0;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          position: relative;
+          #notification-num  {
+            position: absolute;
+            right: 0;
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background: rgb(255, 0, 0);
+            font-size: .8em;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+           
+          }
+        }
+        .settings-container, .language-container {
+          @extend .notification-container;
+        }
+        .settings-icon, .language-icon, .notification-icon {
+          cursor: pointer;
+          height: 100%;
+          width: 50px;
+          
+        }
+      }
+    }
+  }
+  

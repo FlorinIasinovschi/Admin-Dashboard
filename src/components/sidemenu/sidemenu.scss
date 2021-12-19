@@ -1,0 +1,45 @@
+.menu-container {
+  flex: 1;
+  background: rgb(246, 246, 248); 
+  height: calc(100vh - 70px);
+  position: sticky;
+  .section {
+    //background: chocolate;
+    margin: 5% 0 0 5%;
+    padding: 3%;
+    h3 {
+      font-size: 1.1em;
+      color: rgb(167, 167, 167);
+    }
+    ul {
+      list-style: none;
+      padding: 3%;
+      li {
+        cursor: pointer;
+        padding: 5px;
+        font-size: 1.3em;
+        display: flex;
+        align-items: center;
+        //background: aqua;
+        border-radius: 10px;
+        color: rgb(70, 70, 70);
+
+        .sections-icon {
+          height: 100%;
+          width: 1.3em;
+          //background: red;
+          margin-right: 2%;
+        }
+        
+
+        &:hover {
+          background: rgb(226, 219, 255);
+          
+        }
+        &:active {
+          background: lightgreen;
+        }
+      }
+    }
+  }
+}
