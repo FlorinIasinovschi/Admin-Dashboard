@@ -1,0 +1,48 @@
+.widgets-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  //background: chocolate;
+  padding: 1%;
+  height: auto;
+  .container {
+    border-radius: 8px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 2%;
+    width: 20%;
+    height: auto;
+    background: rgb(255, 255, 255);
+    -webkit-box-shadow: 0px 2px 8px -1px rgba(159,159,159,0.5); 
+    box-shadow: 0px 2px 8px -1px rgba(159,159,159,0.5);
+    .title {
+      font-size: 1.5em;
+    }
+    .amount-container {
+      margin-top: 5%;
+      display: flex;
+      align-items: center;
+      .amount {
+        font-size: 2.5em;
+        font-weight: 600;
+      }
+      .comparison {
+        font-size: 1.1em;
+        font-weight: 600;
+        margin-left: 20%;
+      }
+      .arrow-pos {
+        color: green;
+      }
+      .arrow-neg {
+        color: red;
+      }
+
+    }
+    .comparison-subject {
+      margin-top: 5%;
+    }
+  }
+}
