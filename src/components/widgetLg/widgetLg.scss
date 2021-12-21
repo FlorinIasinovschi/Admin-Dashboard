@@ -1,0 +1,68 @@
+.widgetLg-container {
+  flex:5;
+  height: auto;
+  background: rgb(255, 255, 255);
+  -webkit-box-shadow: 0px 2px 8px -1px rgba(159,159,159,0.5); 
+  box-shadow: 0px 2px 8px -1px rgba(159,159,159,0.5);
+  padding:1.5%;
+  margin:0 2% ;
+
+  .title{
+    font-size: 1.5em;
+    margin: 0 0 3% 0;
+  }
+  table {
+    width: 100%;
+    //border: 1px solid black;
+    border-spacing: 20px;
+
+    .main-row{
+
+      font-size: 1.2em;
+      font-weight: 700;
+      
+    }
+    .transaction-unit {
+      .user { 
+        display: flex;
+        align-items: center;
+        width: auto;
+        font-size: 1.1em;
+        font-weight: 600;
+        img {
+          margin-right: 2em;
+          width: 3em;
+          border-radius: 50%;
+        }
+      }
+      .amount {
+        font-weight: 600;
+        font-size: 1.1em;
+      }
+      .btn-cell{
+        .btn-status {
+        width: auto;
+        border: none;
+        border-radius: 10px;
+        padding: .8em 1.2em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &.Approved {
+          background: rgb(169, 238, 175);
+          color: rgb(30, 87, 30);
+        }
+        &.Pending {
+          background: rgb(198, 213, 255);
+          color: rgb(31, 50, 156);
+        }
+        &.Declined {
+          background: rgb(255, 147, 147);
+          color: rgb(112, 23, 23);
+        }
+      }
+      }
+
+    }
+  }
+}

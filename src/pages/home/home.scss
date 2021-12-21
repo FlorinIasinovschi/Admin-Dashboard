@@ -1,4 +1,7 @@
 .home {
   flex: 5;
   background: rgb(255, 255, 255);
+  .widgets-container {
+    display: flex;
+  }
 }

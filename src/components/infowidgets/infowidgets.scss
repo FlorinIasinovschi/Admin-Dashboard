@@ -1,11 +1,12 @@
 .widgets-wrapper {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
   //background: chocolate;
-  padding: 1%;
+  justify-content: space-between;
+  margin:2% 2% 0 2% ;
   height: auto;
   .container {
+    //margin-right:10% ;
     border-radius: 8px;
     display: flex;
     align-items: flex-start;

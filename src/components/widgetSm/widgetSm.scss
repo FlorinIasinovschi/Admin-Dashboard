@@ -1,0 +1,64 @@
+.widgetSm-container {
+  flex:2;
+  height: auto;
+  background: rgb(255, 255, 255);
+  -webkit-box-shadow: 0px 2px 8px -1px rgba(159,159,159,0.5); 
+  box-shadow: 0px 2px 8px -1px rgba(159,159,159,0.5);
+  padding:1.5%;
+  margin-left:2%;
+  .title {
+    font-size: 1.5em;
+    margin: 0 0 10% 0;
+  }
+  .people-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 8% 0;
+    .person-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      
+      .profile-img {
+        width: 15%;
+        height: 15%;
+        border-radius: 50%;
+      }
+      .info {
+        display: flex;
+        flex-direction: column;
+        margin-left: 5%;
+        .name {
+          font-size: 1.2em;
+          margin: 0 0 2% 0;
+          font-weight: 600;
+        }
+        .job {
+          color: grey;
+          font-size: 1.1em;
+          font-weight: 300;
+        }
+      }
+      .display {
+        cursor: pointer;
+        width: auto;
+        margin: 0 0 0 10%;
+        border: none;
+        border-radius: 10px;
+        padding: 2% 3%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1em;
+        background: rgb(219, 216, 231);
+        color: grey;
+        .eye-icon {
+          width: 1.5em;
+          height: auto;
+          margin-right: .5em;
+        }
+      }
+  
+    }
+      }
+}
